@@ -1,6 +1,6 @@
 # Docker Compose for GISWater 4 
 
-It actuality docker compose by configure for implement of GISWater 4
+It actuality docker compose by configure for implement of GISWater 4.3 used [Kartoza Image](https://hub.docker.com/r/kartoza/postgis) 
 
 It step next
 
@@ -8,13 +8,17 @@ It step next
 
 2. Copy variable file
 
+```sh
 cp .example.env .env
+```
 
 3. You can change variable in .env, for example user or password of pgadmin
 
 4. Run docker compose
 
+```sh
 docker-compose up -d
+```
 
 5. Ready!!!
 
