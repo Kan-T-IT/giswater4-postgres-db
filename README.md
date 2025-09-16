@@ -10,13 +10,26 @@ It step next
 
 cp .example.env .env
 
-3. Run docker compose
+3. You can change variable in .env, for example user or password of pgadmin
+
+4. Run docker compose
 
 docker-compose up -d
 
-4. Ready!!!
+5. Ready!!!
 
 
-You can access to pgadmin on http://localhost:5050 and you can create to server connection, You sould user docker ip for db. 
+You can access to pgadmin on http://localhost:5050 and you can create to server connection, You must use the container's IP and port 5432. 
 
 
+For Example of configuration connection 
+
+![connection setting pgadmin](image.png)
+
+You can see two db, giswater4 an project. First is for giswater4, it haved create extension of postgis, postgis_raster and pg_router. The second is for save the QGIS project. 
+
+For configuration QGIS connection you must use the next configuration: 
+
+![connection setting qgis](image-1.png)
+
+Ready for use !!!
